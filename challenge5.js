@@ -1,12 +1,10 @@
 
 const chooseStations = (stations) => {
-  // Code here!
-  let length = stations.length;
   let output = [];
-  for (ii = 0; ii < length; ii++){
-      let stationArray = stations[ii];
-      if (stationArray[1] >= 20 && (stationArray[2] === 'community centre' || stationArray[2] ===  'school')){
-          output.push(stationArray[0]);
+  for (ii = 0; ii < stations.length; ii++){
+      let station = stations[ii];
+      if (station[1] >= 20 && (station[2] === 'community centre' || station[2] ===  'school')){
+          output.push(station[0]);
       }
   }
   return output
