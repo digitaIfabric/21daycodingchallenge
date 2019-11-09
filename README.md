@@ -2,6 +2,8 @@
 
 Join our team [Digital Fabric](https://coding-challenge.lighthouselabs.ca/teams/join/digital-fabric)
 
+![](https://raw.githubusercontent.com/digitaIfabric/21daycodingchallenge/master/image.png)
+
 Here are repls of all the challenges in Typescript, complete with input and output examples:
 
 | Code Sample and Video Tutorials | 
