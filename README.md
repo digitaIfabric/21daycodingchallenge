@@ -3,6 +3,7 @@
 Here are repls of all the challenges in Typescript, complete with input and output examples:
 
 * [Challenge 1](https://repl.it/@digitalfabric/challenge1)
+[![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/4b825sXVejI/0.jpg)](https://www.youtube.com/watch?v=4b825sXVejI)
 * [Challenge 2](https://repl.it/@digitalfabric/challenge2)
 * [Challenge 3](https://repl.it/@digitalfabric/challenge3)
 * [Challenge 4](https://repl.it/@digitalfabric/challenge4)
