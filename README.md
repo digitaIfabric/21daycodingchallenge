@@ -25,9 +25,9 @@ Here are repls of all the challenges in Typescript, complete with input and outp
 | [Challenge 8](https://repl.it/@digitalfabric/challenge8) |
 | [![](https://img.youtube.com/vi/R-mvC8NaOqY/0.jpg)](https://www.youtube.com/watch?v=R-mvC8NaOqY) |
 | [Challenge 9](https://repl.it/@digitalfabric/challenge9) |
-| [![](https://img.youtube.com/vi/CW5wFmTT590/0.jpg)](https://www.youtube.com/watch?v=CW5wFmTT590&list=PLlKjWcFcCj4ReNjGTCqTt891AIqzywSKd) |
+| [![](https://img.youtube.com/vi/7U0jYYcU43Q/0.jpg)](https://www.youtube.com/watch?v=7U0jYYcU43Q) |
 | [Challenge 10](https://repl.it/@digitalfabric/challenge10) |
-| [![](https://img.youtube.com/vi/CW5wFmTT590/0.jpg)](https://www.youtube.com/watch?v=CW5wFmTT590&list=PLlKjWcFcCj4ReNjGTCqTt891AIqzywSKd) |
+| [![](https://img.youtube.com/vi/_OHSd62QXHc/0.jpg)](https://www.youtube.com/watch?v=_OHSd62QXHc) |
 | [Challenge 11](https://repl.it/@digitalfabric/challenge11) |
 | [![](https://img.youtube.com/vi/CW5wFmTT590/0.jpg)](https://www.youtube.com/watch?v=CW5wFmTT590&list=PLlKjWcFcCj4ReNjGTCqTt891AIqzywSKd) |
 | [Challenge 12](https://repl.it/@digitalfabric/challenge12) |
