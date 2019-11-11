@@ -29,7 +29,7 @@ Here are repls of all the challenges in Typescript, complete with input and outp
 | [Challenge 10](https://repl.it/@digitalfabric/challenge10) |
 | [![](https://img.youtube.com/vi/_OHSd62QXHc/0.jpg)](https://www.youtube.com/watch?v=_OHSd62QXHc) |
 | [Challenge 11](https://repl.it/@digitalfabric/challenge11) |
-| [![](https://img.youtube.com/vi/lcn2pZMRn7s/0.jpg)](https://www.youtube.com/watch?v=lcn2pZMRn7s) |
+| [![](https://i.ytimg.com/vi/lcn2pZMRn7s/maxresdefault.jpg)](https://www.youtube.com/watch?v=lcn2pZMRn7s) |
 | [Challenge 12](https://repl.it/@digitalfabric/challenge12) |
 | [![](https://img.youtube.com/vi/CW5wFmTT590/0.jpg)](https://www.youtube.com/watch?v=CW5wFmTT590&list=PLlKjWcFcCj4ReNjGTCqTt891AIqzywSKd) |
 | [Challenge 13](https://repl.it/@digitalfabric/challenge13) |
