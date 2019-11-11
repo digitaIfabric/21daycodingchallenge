@@ -37,12 +37,6 @@ const buses = {
 
 const busTimes = (buses: any): Record<string, number> => {
   let times = {} as any;
-  type Value = {
-    distance: number,
-    speed: number
-  }
-  let valueX = <Value>{};
-
   for (let [key, value] of Object.entries(buses)) {
     let STRING = JSON.stringify(value)
     let OBJECT: Record<string, number> = JSON.parse(STRING)
