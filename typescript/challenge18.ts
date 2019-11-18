@@ -82,28 +82,13 @@ const countTickets = (tickets: string[]): Record<string, number> => {
     return object
 }
 
-const bestOdds = (tickets: string[], raffleEntries: Record<string, number>): string => {
+const bestOdds = (tickets: string[], raffleEntries: any): string => {
     let tally = countTickets(tickets)
-
     let rT = Object.keys(tally).map(i => tally[i])
     let rE = Object.keys(raffleEntries).map(i => raffleEntries[i])
     let result = rT.map(function (n, i) { return n / rE[i]; });
-    console.log(result)
-    if (result[0] >= result[1]) {
-        if (result[2] > result[0]) {
-            console.log("BLUE")
-            return "You have the best odds of winning the blue raffle."
-        }
-        console.log("RED")
-        return "You have the best odds of winning the red raffle."
-    } else {
-        if (result[2] >= result[1]) {
-            console.log("BLUE")
-            return "You have the best odds of winning the blue raffle."
-        } else {
-            console.log("GREEN")
-            return "You have the best odds of winning the green raffle."
-        }
-    }
+    let index = result.indexOf(Math.max(...result));
+    console.log( `You have the best odds of winning the ${Object.keys(raffleEntries)[index]} raffle.`);
+    return `You have the best odds of winning the ${Object.keys(raffleEntries)[index]} raffle.`
 }
 // bestOdds(tickets, raffleEntries)
