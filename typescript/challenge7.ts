@@ -31,19 +31,13 @@
 //       1  // transportation
 //     ]
 
-const termTopics = (interviews: Array<string>): Array<number> => {
-    let count = [0, 0, 0];
-    
-    for (const interview of interviews) {
-        if (interview === 'smart city') {
-            count[0]++;
-        }
-        if (interview === 'arts funding') {
-            count[1]++;
-        }
-        if (interview === 'transportation') {
-            count[2]++;
-        }
+const termTopics = (interviews : Array<string>): Array<number> =>  interviews.reduce(([countA,countB,countC], interview)=> {
+    switch(interview){
+      case "smart city": return [countA+1,countB,countC];
+      case "arts funding": return [countA,countB+1,countC];
+      case "transportation": return [countA,countB,countC+1];
+      default: return [countA,countB,countC];
     }
-    return count
-} 
+  },[0,0,0])
+
+//  console.log(termTopics(interviews))
