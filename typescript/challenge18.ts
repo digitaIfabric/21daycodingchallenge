@@ -72,11 +72,11 @@ const countTickets = (tickets: string[]): Record<string, number> => {
     let object = { red: 0, green: 0, blue: 0 }
     for (let i = 0; i < tickets.length; i++) {
         if (tickets[i] === 'red') {
-            object['red'] = object['red'] + 1
+            object['red']++;
         } else if (tickets[i] === 'green') {
-            object['green'] = object['green'] + 1
+            object['green']++;
         } else if (tickets[i] === 'blue') {
-            object['blue'] = object['blue'] + 1
+            object['blue']++;
         }
     }
     return object
