@@ -2,13 +2,11 @@ const countTickets = (tickets) => {
     let object = { red: 0, green: 0, blue: 0 };
     for (let i = 0; i < tickets.length; i++) {
         if (tickets[i] === 'red') {
-            object['red'] = object['red'] + 1;
-        }
-        else if (tickets[i] === 'green') {
-            object['green'] = object['green'] + 1;
-        }
-        else if (tickets[i] === 'blue') {
-            object['blue'] = object['blue'] + 1;
+            object['red']++;
+        } else if (tickets[i] === 'green') {
+            object['green']++;
+        } else if (tickets[i] === 'blue') {
+            object['blue']++;
         }
     }
     return object;
