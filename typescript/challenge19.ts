@@ -1,4 +1,4 @@
-Challenge #19 - Pumpkin Spice and Everything Nice
+// Challenge #19 - Pumpkin Spice and Everything Nice
 // This is the Codeville Fall Festival, and nothing says fall more than pumpkin spice. At this year's festival, there will be three ways for the people of Codeville to get their pumpkin spice fix:
 
 // Pumpkin pie
@@ -29,10 +29,11 @@ Challenge #19 - Pumpkin Spice and Everything Nice
 // [1, 1, 1, 48]
 
 const pumpkinSpice = (money: number): number[] => {
-    let pies: number = Math.floor(money/5)
-    let remainder: number = money%5;
-    let lattes: number = Math.floor(remainder/3);
-    let macarons: number = remainder%3;
-    let grams: number = pies*30+lattes*15+macarons*3
-    return [pies, lattes, macarons, grams];
+    let π: number = Math.floor(money / 5);
+    let r: number = money % 5;
+    let l: number = Math.floor(r / 3);
+    let m: number = r % 3;
+    let g: number = 30 * π + 15 * l + 3 * m;
+    return [π, l, m, g];
 }
+// console.log(pumpkinSpice(9));
