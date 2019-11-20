@@ -77,7 +77,7 @@
 
 interface shape {
     type: string;
-    radius?: number;
+    radius?: any;
     height?: any;
     width?: any;
     depth?: any;
