@@ -77,10 +77,10 @@
 
 interface shape {
     type: string;
-    radius?: any;
-    height?: any;
-    width?: any;
-    depth?: any;
+    radius?: number;
+    height?: number;
+    width?: number;
+    depth?: number;
 }
 
 const π = 3.14159 
