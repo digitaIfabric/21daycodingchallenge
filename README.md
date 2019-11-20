@@ -2,7 +2,7 @@
 
 Join our team [Digital Fabric](https://coding-challenge.lighthouselabs.ca/teams/join/digital-fabric)
 
-![](https://raw.githubusercontent.com/digitaIfabric/21daycodingchallenge/master/cover.png)
+![](https://raw.githubusercontent.com/digitaIfabric/21daycodingchallenge/master/cover20.png)
 
 Here are repls of all the challenges in Typescript, complete with input and output examples:
 
@@ -45,8 +45,8 @@ Here are repls of all the challenges in Typescript, complete with input and outp
 | [Challenge 18](https://repl.it/@digitalfabric/challenge18) |
 | [![](https://i.ytimg.com/vi/V6YwVAxqA_Y/maxresdefault.jpg)](https://www.youtube.com/watch?v=V6YwVAxqA_Y) |
 | [Challenge 19](https://repl.it/@digitalfabric/challenge19) |
-| [![](https://i.ytimg.com/vi/CW5wFmTT590/maxresdefault.jpg)](https://www.youtube.com/watch?v=CW5wFmTT590&list=PLlKjWcFcCj4ReNjGTCqTt891AIqzywSKd) |
+| [![](https://i.ytimg.com/vi/5CvDZYqbvlM/maxresdefault.jpg)](https://www.youtube.com/watch?v=5CvDZYqbvlM) |
 | [Challenge 20](https://repl.it/@digitalfabric/challenge20) |
-| [![](https://i.ytimg.com/vi/CW5wFmTT590/maxresdefault.jpg)](https://www.youtube.com/watch?v=CW5wFmTT590&list=PLlKjWcFcCj4ReNjGTCqTt891AIqzywSKd) |
+| [![](https://i.ytimg.com/vi/DIome7Q_yTw/maxresdefault.jpg)](https://www.youtube.com/watch?v=DIome7Q_yTw) |
 | [Challenge 21](https://repl.it/@digitalfabric/challenge21) |
-| [![](https://i.ytimg.com/vi/CW5wFmTT590/maxresdefault.jpg)](https://www.youtube.com/watch?v=CW5wFmTT590&list=PLlKjWcFcCj4ReNjGTCqTt891AIqzywSKd) |
+| [![](https://i.ytimg.com/vi/CW5wFmTT590/maxresdefault.jpg)](https://www.youtube.com/channel/UC4ngUD24FuWRMQSgoplhsDQ) |
