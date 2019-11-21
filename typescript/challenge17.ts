@@ -5,40 +5,50 @@
 // Our function must return the name of the person who submitted (vegetables.submitter) the vegetable with the highest ranking in the provided category.
 // Examples
 // Input:
-   const vegetables = [
-      {
-        submitter: 'Old Man Franklin',
-        redness: 10,
-        plumpness: 5
-      },
-      {
-        submitter: 'Sally Tomato-Grower',
-        redness: 2,
-        plumpness: 8
-      },
-      {
-        submitter: 'Hamid Hamidson',
-        redness: 4,
-        plumpness: 3
-      }
-    ]
-    const metric = 'redness'
-    
+// const vegetables: Vegetable[] = [
+//   {
+//     submitter: 'Old Man Franklin',
+//     redness: 10,
+//     plumpness: 5
+//   },
+//   {
+//     submitter: 'Sally Tomato-Grower',
+//     redness: 2,
+//     plumpness: 8
+//   },
+//   {
+//     submitter: 'Hamid Hamidson',
+//     redness: 4,
+//     plumpness: 3
+//   }
+// ]
+// let metric = 'plumpness';
+
 // Output:
 // Old Man Franklin
 
+interface Vegetable {
+  submitter: string;
+  redness: number;
+  plumpness: number;
+}
 
-const judgeVegetable = (vegetables: any, metric: string): any => {
-  // Code here!
-  let value = 0;
-  let name = "";
-  for(let veggie of vegetables){
-    if (veggie[metric] > value){
-      name = veggie['submitter'];
-      value = veggie[metric];
+const judgeVegetable = (vegetables: Vegetable[], metric: string): string => {
+  let value: number = 0;
+  let name: string = "";
+  for(let veg of vegetables){
+    if (metric === 'redness'){
+      if (veg['redness'] > value){
+        name = veg['submitter'];
+        value = veg['redness'];
+      }
+    }
+    if (metric === 'plumpness'){
+      if (veg['plumpness'] > value){
+      name = veg['submitter'];
+      value = veg['redness'];
+      }
     }
   }
   return name;
 }
-
-console.log(judgeVegetable(vegetables, metric))
