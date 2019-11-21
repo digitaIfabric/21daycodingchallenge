@@ -22,28 +22,15 @@
 //       uptown: 1.3
 //     }
 
+interface Bus {
+  distance: number;
+  speed: number;
+}
 
-
-const buses = {
-  pickadilly: {
-      distance: 10,
-      speed: 5
-  },
-  uptown: {
-      distance: 13,
-      speed: 10
+const busTimes = (buses: { [key: string]: Bus }): Record<string, number> => {
+  let times: Record<string, number> = {};
+  for (let bus in buses) {
+    times[bus] = buses[bus].distance/buses[bus].speed
   }
+  return times
 }
-
-const busTimes = (buses: any): Record<string, number> => {
-  let times = {} as any;
-  for (let [key, value] of Object.entries(buses)) {
-    let STRING = JSON.stringify(value)
-    let OBJECT: Record<string, number> = JSON.parse(STRING)
-    times[key] = OBJECT.distance/OBJECT.speed
-    }
-    console.log("RETURN", times)
-    return times
-}
-
-busTimes(buses)
