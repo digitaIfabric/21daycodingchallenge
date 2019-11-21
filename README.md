@@ -1,8 +1,9 @@
 ## Fall 2019 Lighthouse Labs 21 Day Coding Challenge ##
 
 Join our team [Digital Fabric](https://coding-challenge.lighthouselabs.ca/teams/join/digital-fabric)
+Check the [leaderboard](https://coding-challenge.lighthouselabs.ca/teams/leaderboard)
 
-![](https://raw.githubusercontent.com/digitaIfabric/21daycodingchallenge/master/cover20.png)
+![](https://raw.githubusercontent.com/digitaIfabric/21daycodingchallenge/master/cover21.png)
 
 Here are repls of all the challenges in Typescript, complete with input and output examples:
 
