@@ -12,34 +12,55 @@
 // Note: In the tests there will always be a single correct answer, and you will NOT need to consider special cases. For example, you do NOT need to worry about cases where one bakery has BOTH the ingredients for a recipe.
 // Examples
 // Input:
-    const bakeryA = ['saffron', 'eggs', 'tomato paste', 'coconut', 'custard']
-    const bakeryB = ['milk', 'butter', 'cream cheese']
-    const recipes = [
-        {
-            name: 'Coconut Sponge Cake',
-            ingredients: ['coconut', 'cake base']
-        },
-        {
-            name: 'Persian Cheesecake',
-            ingredients: ['saffron', 'cream cheese']
-        },
-        {
-            name: 'Custard Surprise',
-            ingredients: ['custard', 'ground beef']
-        }
-    ]
+const bakeryA = ['saffron', 'eggs', 'tomato paste', 'coconut', 'custard']
+const bakeryB = ['milk', 'butter', 'cream cheese']
+const recipes = [
+    {
+        name: 'Coconut Sponge Cake',
+        ingredients: ['coconut', 'cake base']
+    },
+    {
+        name: 'Persian Cheesecake',
+        ingredients: ['saffron', 'cream cheese']
+    },
+    {
+        name: 'Custard Surprise',
+        ingredients: ['custard', 'ground beef']
+    }
+]
 // Output:
 // Persian Cheesecake
 
-const chooseRecipe = function(bakeryA: string[], bakeryB: string[], recipes: any): any {
-  for (let R of recipes){
-    const A: number = ~bakeryA.indexOf(R.ingredients[0])
-    const Y: number = ~bakeryA.indexOf(R.ingredients[1])
-    const B: number = ~bakeryB.indexOf(R.ingredients[0])
-    const Z: number = ~bakeryB.indexOf(R.ingredients[1])
-    if ((A || Y)  && (B || Z)) {
-      return R.name;
-    } 
-  }
+class recipe {
+  name: string;
+  ingredients: string[];
+  constructor(name: string, ingredients: string[]) {
+      this.name = name;
+      this.ingredients = ingredients;
+    }
 }
-console.log(chooseRecipe(bakeryA, bakeryB, recipes))
+
+const chooseRecipe = function(bakeryA: string[], bakeryB: string[], recipes: Array<recipe>): any {
+  let foundA: boolean = false;
+  let foundB: boolean = false;
+  for (const R of recipes){
+    for (let i = 0; i < R.ingredients.length; i++){
+      for (const A of bakeryA){
+        if (A === R.ingredients[i]){
+          foundA = true;
+        }
+      }
+      for (const B of bakeryB){
+        if (B === R.ingredients[i]){
+          foundB = true;
+        }
+      }
+
+      if (foundA && foundB){
+        return R.name;
+      } 
+    }
+  foundA = false;
+  foundB = false;
+  } 
+}
