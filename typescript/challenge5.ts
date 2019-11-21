@@ -20,13 +20,15 @@
 // Output:
 // ['Bright Lights Elementary', 'Moose Mountain Community Centre']
 
-const chooseStations = (stations: Array<Array<string>>): Array<string> => {
-    let output = [];
-    for (let ii = 0; ii < stations.length; ii++){
-        let station = stations[ii];
-        if (parseInt(station[1]) >= 20 && (station[2] === 'community centre' || station[2] ===  'school')){
-            output.push(station[0]);
-        }
-    }
-    return output
+type Station = (string | number)[]; 
+
+const chooseStations = (stations: Station[]): string[] => {
+  let output: string[] = [];
+  for (let ii: number = 0; ii < stations.length; ii++){
+      let station = stations[ii];
+      if (parseInt(station[1].toString()) >= 20 && (station[2] === 'community centre' || station[2] ===  'school')){
+          output.push(station[0].toString());
+      }
+  }
+  return output
 }
