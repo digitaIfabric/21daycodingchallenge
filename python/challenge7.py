@@ -3,8 +3,8 @@ def termTopics(interviews):
     for interview in interviews:
         if (interview == 'smart city'):
             count[0] = count[0] + 1
-        if (interview == 'arts funding'):
+        elif (interview == 'arts funding'):
             count[1] = count[1] + 1
-        if (interview == 'transportation'):
+        elif (interview == 'transportation'):
             count[2] = count[2] + 1
     return count
