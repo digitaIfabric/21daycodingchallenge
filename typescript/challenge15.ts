@@ -33,8 +33,6 @@ const finalPosition = (moves: string[]): number[] => {
       xTotal++
     }
   }
-  let coord: number[] = [xTotal, yTotal]
-  console.log(coord)
-  return coord
+  return [xTotal, yTotal]
 }
 finalPosition(moves)
