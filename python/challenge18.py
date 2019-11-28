@@ -12,9 +12,18 @@ def countTickets(tickets):
 def bestOdds(tickets, raffleEntries): 
     tally = countTickets(tickets)
     red = 'Red'
-    print(tally)
-    return f'You have the best odds of winning the {red} raffle.'
+    odds = []
+    p = [0.3, 0.3, 0.5]
+    for color in tally:
+        odds.append(tally[color]/raffleEntries[color])
+    index_max = max(range(0,len(odds)), key=odds.__getitem__)
+    if (index_max == 0):
+        return 'You have the best odds of winning the Red raffle.'
+    elif (index_max == 1):
+        return 'You have the best odds of winning the Green raffle.'
+    elif (index_max == 2):
+        return 'You have the best odds of winning the Blue raffle.'
 
-tickets = [ 'red', 'red', 'green', 'blue', 'green' ]
-raffleEntries = { 'red': 10, 'green': 30, 'blue': 15 }
-bestOdds(tickets, raffleEntries)
+# tickets = [ 'red', 'red', 'green', 'blue', 'green' ]
+# raffleEntries = { 'red': 10, 'green': 30, 'blue': 15 }
+# bestOdds(tickets, raffleEntries)
