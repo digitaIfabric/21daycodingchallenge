@@ -13,7 +13,6 @@ def voterTurnout(voter_signatures, voter_ids)
     end    
     
     if truth.any?
-        puts 'All clear, we can count the votes!'
         return 'All clear, we can count the votes!'
     else
         return 'FRAUD!'
