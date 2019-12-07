@@ -49,7 +49,7 @@
 //       2 // Beth
 //     ]
 
-const castVote = (name: string, votes: Array<number>): Array<number> => {
+const castVote = (votes: number[], name: string): number[] => {
     if (name === 'Tim'){
       votes[0] = votes[0] + 1
     } else if (name === 'Sally'){
