@@ -49,12 +49,12 @@
 // 'All clear, we can count the votes!
 
 
-const voterTurnout = (voter_signatures: Array<string>, voter_ids: Array<string>): boolean|string => {  
+const voterTurnout = (voter_signatures: string[], voter_ids: string[]): boolean|string => {  
     if (voter_signatures.length !== voter_ids.length){
         return false
     }
 
-    let truth = [];  
+    let truth: boolean[] = [];  
     for (let ii = 0; ii <= voter_ids.length; ii++){
         if (voter_signatures[ii] === voter_ids[ii]){
         truth[ii] = true
