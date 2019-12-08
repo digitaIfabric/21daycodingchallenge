@@ -13,7 +13,7 @@
 // Output:
 // ['Jake', 'Alanna', 'Stephanie']
 
-const registerToVote = (name: string, unregisteredVoters: Array<string>): Array<string> => {
+const registerToVote = (name: string, unregisteredVoters: string[]): string[] => {
   let names = []
   for (let ii = 0; ii < unregisteredVoters.length; ii++){
     if (unregisteredVoters[ii] !== name){
