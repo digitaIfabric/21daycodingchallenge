@@ -31,7 +31,7 @@
 //       1  // transportation
 //     ]
 
-const termTopics = (interviews : Array<string>): Array<number> =>  interviews.reduce(([countA,countB,countC], interview)=> {
+const termTopics = (interviews : string[]): number[] =>  interviews.reduce(([countA,countB,countC], interview)=> {
     switch(interview){
       case "smart city": return [countA+1,countB,countC];
       case "arts funding": return [countA,countB+1,countC];
