@@ -23,8 +23,8 @@ const chooseLunchWinner = (listOfChoices) => {
       return obj;
     }, {});
     
-    const output = Object.keys(count).reduce((a,b) => { 
+    const output = Object.keys(count).reduce((a,b) =>
         count[a] > count[b] ? a : b 
-    });
+    );
     return output
 }
